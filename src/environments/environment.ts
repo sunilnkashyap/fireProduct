@@ -2,8 +2,17 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+/* Sample firebase account only for demo. */
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyD7luAbzpE6lQY852Okx5MO70F_8dnjdOM",
+    authDomain: "fireproduct-angular.firebaseapp.com",
+    databaseURL: "https://fireproduct-angular.firebaseio.com",
+    projectId: "fireproduct-angular",
+    storageBucket: "fireproduct-angular.appspot.com",
+    messagingSenderId: "608063681165"
+  }
 };
 
 /*
