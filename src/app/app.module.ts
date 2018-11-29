@@ -10,15 +10,10 @@ import { AppComponent } from './app.component';
 // bootstrap date picker
 import { BsDatepickerModule } from 'ngx-bootstrap';
 
-// Firebase Module: main module
-import { AngularFireModule } from '@angular/fire';
-// Firebase database module
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-// Firebase configuration
-import { environment } from '../environments/environment';
-import { AddComponent } from './page/add/add.component';
-
+// Product Service
 import { ProductService } from './services/product.service';
+
+import { AddComponent } from './page/add/add.component';
 import { ListComponent } from './page/list/list.component';
 import { HomeComponent } from './page/home/home.component';
 import { FooterComponent } from './page/partials/footer/footer.component';
@@ -37,8 +32,6 @@ import { HeaderComponent } from './page/partials/header/header.component';
     BsDatepickerModule.forRoot(),
     BrowserModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase), /* Init firebase module with configuration */
-    AngularFireDatabaseModule, /* Init firebase database module */
     AppRoutingModule,
     FormsModule
   ],

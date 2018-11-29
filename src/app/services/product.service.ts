@@ -17,12 +17,12 @@ export class ProductService {
 
     // saving new product
     saveProduct(product) {
-      return this.http.post( environment.serverAPI + 'new-product', product);
+      return this.http.post( environment.serverAPI + 'new-product', product); // add-new-product
     }
 
     // fetching products
     listProducts() {
-      return this.http.get(environment.serverAPI + 'products');
+      return this.http.get(environment.serverAPI + 'products'); // product-list
     }
 
 }

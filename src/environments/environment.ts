@@ -6,15 +6,7 @@
 export const environment = {
   production: false,
   serverURI: 'http://localhost:8000',
-  serverAPI: 'http://localhost:8000/api/',
-  firebase: {
-    apiKey: 'XXXXXXXXXX',
-    authDomain: 'XXXXXXXXXX',
-    databaseURL: 'XXXXXXXXXX',
-    projectId: 'XXXXXXXXXX',
-    storageBucket: 'XXXXXXXXXX',
-    messagingSenderId: 'XXXXXXXXXX'
-  }
+  serverAPI: 'http://localhost:8000/api/'
 };
 
 /*

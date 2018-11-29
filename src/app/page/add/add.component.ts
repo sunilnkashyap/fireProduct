@@ -5,9 +5,6 @@ import {Router} from '@angular/router';
 // importing product service
 import { ProductService } from '../../services/product.service';
 
-// importing jQuery :: for testing
-import * as $ from 'jquery';
-
 @Component({
   selector: 'app-add',
   templateUrl: './add.component.html',

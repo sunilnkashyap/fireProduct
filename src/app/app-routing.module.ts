@@ -13,8 +13,7 @@ const routes: Routes = [
       { path: '', component: ListComponent },
       { path: 'add', component: AddComponent }
     ]
-  },
-  { path: 'add', component: AddComponent }
+  }
 ];
 
 @NgModule({
