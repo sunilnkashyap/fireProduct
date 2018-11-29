@@ -5,13 +5,15 @@
 /* Sample firebase account only for demo. */
 export const environment = {
   production: false,
+  serverURI: 'http://localhost:8000',
+  serverAPI: 'http://localhost:8000/api/',
   firebase: {
-    apiKey: "AIzaSyD7luAbzpE6lQY852Okx5MO70F_8dnjdOM",
-    authDomain: "fireproduct-angular.firebaseapp.com",
-    databaseURL: "https://fireproduct-angular.firebaseio.com",
-    projectId: "fireproduct-angular",
-    storageBucket: "fireproduct-angular.appspot.com",
-    messagingSenderId: "608063681165"
+    apiKey: 'XXXXXXXXXX',
+    authDomain: 'XXXXXXXXXX',
+    databaseURL: 'XXXXXXXXXX',
+    projectId: 'XXXXXXXXXX',
+    storageBucket: 'XXXXXXXXXX',
+    messagingSenderId: 'XXXXXXXXXX'
   }
 };
 

@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 // importing product service
 import { ProductService } from '../../services/product.service';
 
+// constants
+import { environment } from '../../../environments/environment';
+
 import {Router} from '@angular/router';
 
 @Component({
@@ -12,6 +15,7 @@ import {Router} from '@angular/router';
 })
 export class ListComponent implements OnInit {
 
+  serverURI = environment.serverURI;
   products: any;
   constructor(
     private productService: ProductService, // object of service

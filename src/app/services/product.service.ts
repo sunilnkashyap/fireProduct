@@ -3,24 +3,26 @@ import { Injectable } from '@angular/core';
 // http client for sending request to server.
 import { HttpClient } from '@angular/common/http';
 
+// constants
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient // client
     ) { }
 
     // saving new product
     saveProduct(product) {
-      console.log(product);
-      return this.http.post('//localhost:8000/api/new-product', product);
+      return this.http.post( environment.serverAPI + 'new-product', product);
     }
 
     // fetching products
     listProducts() {
-      return this.http.get('//localhost:8000/api/products');
+      return this.http.get(environment.serverAPI + 'products');
     }
 
 }

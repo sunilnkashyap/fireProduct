@@ -4,7 +4,7 @@
 
     <div class="col-12 col-md-6 col-lg-4" *ngFor="let p of products" style="padding:10px">
       <div class="card">
-        <img class="card-img-top" [src]="'//localhost:8000'+p.image" alt="Card image cap">
+        <img class="card-img-top" [src]="serverURI+p.image" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">
             <a href="product.html" title="View Product">{{ p.name }}</a>

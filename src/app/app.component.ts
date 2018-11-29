@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 export class AppComponent {
   title = 'fireProducts';
 
-  constructor(private db: AngularFireDatabase) {
+  constructor() {
 
   }
 }
